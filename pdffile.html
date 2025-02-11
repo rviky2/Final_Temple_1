@@ -34,17 +34,17 @@
                 <div class="container-fluid">
                     <div class="row align-items-center justify-content-center text-center">
                         <!-- Left Logo -->
-                        <div class="col-auto d-flex align-items-center pe-1">
+                        <div class="col-auto d-flex align-items-center logo-container">
                             <a href="index.html">
                                 <img src="img/tirumeni-removebg-preview.png" alt="Left Logo" class="logo-img">
                             </a>
                         </div>
                         <!-- Middle Text -->
-                        <div class="col-auto text-center">
+                        <div class="col-auto text-center text-container">
                             <h2 class="header-text">||Om Namo Srinivasaya Namo||</h2>
                         </div>
                         <!-- Right Logo -->
-                        <div class="col-auto d-flex align-items-center ps-1">
+                        <div class="col-auto d-flex align-items-center right-logo logo-container">
                             <a href="index.html">
                                 <img src="img/tirumeni-removebg-preview.png" alt="Right Logo" class="logo-img">
                             </a>
@@ -53,85 +53,65 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Responsive Styling -->
+    
+        <!-- Styling -->
         <style>
+            .top-bar {
+                padding: 5px 0;
+                background-color: #e47914; /* Background Color */
+            }
+    
+            .row {
+                display: flex;
+                flex-wrap: nowrap; /* Prevent wrapping */
+                justify-content: center;
+                align-items: center;
+                gap: 5px; /* Adjusted spacing */
+            }
+    
+            .col-auto {
+                padding: 0 !important; 
+                margin: 0 !important; /* Removed extra spacing */
+            }
+    
             .logo-img {
-                height: 120px; /* Increased size */
-                width: auto; 
+                height: 100px; /* Default large size for desktop */
+                width: auto;
                 object-fit: contain;
             }
-        
+    
             .header-text {
-                color: #FFFFFF; /* White Text */
-        font-size: 32px;
-        font-weight: bold;
-        margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                color: #FFFFFF;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                white-space: nowrap;
             }
-        
+    
             /* Responsive Adjustments */
             @media (max-width: 768px) {
                 .logo-img {
-                    height: 90px;
+                    height: 80px; /* Slightly smaller for tablets */
                 }
                 .header-text {
                     font-size: 26px;
                 }
             }
-        
+    
             @media (max-width: 576px) {
-                .row {
-                    flex-wrap: nowrap;
-                }
                 .logo-img {
-                    height: 50px;
+                    height: 120px; /* Increased size for mobile view */
                 }
                 .header-text {
-                    font-size: 22px;
+                    display: none !important; /* Hide text in mobile view */
+                }
+                .right-logo {
+                    display: none !important; /* Hide right logo on mobile */
                 }
             }
         </style>
-        
-        
-        <!-- Responsive Styling -->
-        <style>
-            .logo-img {
-                height: 100px; 
-                width: auto; 
-                object-fit: contain;
-            }
-            
-            .header-text {
-                white-space: nowrap;
-                margin: 0;
-                font-size: 30px;
-            }
-        
-            /* Responsive Adjustments */
-            @media (max-width: 768px) {
-                .logo-img {
-                    height: 120px;
-                }
-                .header-text {
-                    font-size: 24px;
-                }
-            }
-        
-            @media (max-width: 576px) {
-                .row {
-                    flex-direction: column;
-                }
-                .logo-img {
-                    height: 120px;
-                    margin: 5px 0;
-                }
-                .header-text {
-                    font-size: 20px;
-                }
-            }
-        </style>
-        
+    </body>
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
@@ -248,86 +228,91 @@
         }
     }
 </style>
-
-                
-      
-            <!-- Footer Start -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-contact">
-                                <h2>Office Contact</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Vaikunta Campus<br>Srinivas Institute of Technology,<br>Mangaluru,Karnataka</p>
-                                <p><i class="fa fa-phone-alt"></i>+91 9448597543</p>
-                                <p><i class="fa fa-envelope"></i>vaikunta@sitmng.ac.in</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/sit.samagra.gnana"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.youtube.com/@sitmangalore"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/sitmng/"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/school/15124170/admin/dashboard/"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Seva Information</h2>
-                                <a href="">Sahasranama Archana </a>
-                                <a href="">Kalyanotsava</a>
-                                <a href="">Rathotsava</a>
-                                <a href="">Deepotsava</a>
-                                <a href="">Gana Homa (Havan)</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Seva Information</a>
-                                <a href="">Latest Newsletter</a>
-                                <a href="">Upcoming Events</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="newsletter">
-                                <h2>Newsletter</h2>
-                                <p>
-                                    Experience the vibrant story of Lord Srinivasa through a mesmerizing Yakshagana performance by Staff & Students of SU & SG.
-                                </p>
-                                <div class="form">
-                                    <input class="form-control" placeholder="Email here">
-                                    <button class="btn">Submit</button>
-                                </div>
+           <!-- Footer Start -->
+           <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-contact">
+                            <h2>Office Contact</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>Vaikunta Campus<br>Srinivas Institute of Technology,<br>Mangaluru,Karnataka</p>
+                            <p><i class="fa fa-phone-alt"></i>+91 9448597543</p>
+                            <p><i class="fa fa-envelope"></i>vaikunta@sitmng.ac.in</p>
+                            <div class="footer-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/sit.samagra.gnana"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.youtube.com/@sitmangalore"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/sitmng/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/school/15124170/admin/dashboard/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container footer-menu">
-                    <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="#">Vaikunta Srinivas</a>, All Right Reserved.</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Seva Information</h2>
+                            <a href="">Sahasranama Archana </a>
+                            <a href="">Kalyanotsava</a>
+                            <a href="">Rathotsava</a>
+                            <a href="">Deepotsava</a>
+                            <a href="">Gana Homa (Havan)</a>
                         </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">Team Iris</a></p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Useful Pages</h2>
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Seva Information</a>
+                            <a href="">Latest Newsletter</a>
+                            <a href="">Upcoming Events</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Experience the vibrant story of Lord Srinivasa through a mesmerizing Yakshagana performance by Staff & Students of SU & SG.
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email here">
+                                <button class="btn">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer End -->
-
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <div class="container footer-menu">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">Vaikunta Srinivas</a>, All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Designed By <a href="https://htmlcodex.com">Team Iris</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+<style>
+@media (max-width: 768px) {
+.footer .row {
+    flex-direction: column;
+}
+}
+</style>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
